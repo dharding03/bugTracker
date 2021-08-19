@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Login from "./Frontend/Views/Pages/Login/Login";
 import Sidebar from "./Frontend/Views/Sidebar/Sidebar";
 import ViewBugs from "./Frontend/Views/Pages/viewBugs";
-import BugForm from "./Frontend/Views/Components/BugView/Components/ButCreateAndEdit/bugForm";
+import BugForm from "./Frontend/Views/Components/BugCreateAndEdit/bugForm";
 
 function App() {
     const {auth} = useSelector(state => state)
