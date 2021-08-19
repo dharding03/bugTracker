@@ -7,11 +7,24 @@ export function retrieveBugs() {
         id: 12324,
         name: "Crash on start",
         details: "Crashes after 3 seconds",
-        step: "Open application and it will crash",
+        steps: "Open application and it will crash",
         version: "V 2.0",
         assigned: "Dan Harding",
-        opener: "Jon Doe",
+        creator: "Jon Doe",
         priority: 1,
+        time: "19:58",
+
+    }))
+
+    data.push(new Bug ({
+        id: 12325,
+        name: "Won't Start",
+        details: "Application will not boot up",
+        steps: "Attempt to boot application",
+        version: "V 2.3",
+        assigned: "Dan Harding",
+        creator: "Joey Smith",
+        priority: 3,
         time: "19:58",
 
     }))

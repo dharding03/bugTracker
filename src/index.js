@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import {Provider} from "react-redux";
 import {configureStore, combineReducers} from "@reduxjs/toolkit";
-import authSlice from "./Controllers/Redux/authReducer";
-import bugSlice from "./Controllers/Redux/bugReducer";
-import userSlice from "./Controllers/Redux/userReducer";
+import authReducer from "./Frontend/Controllers/Redux/authReducer";
+import bugReducer from "./Frontend/Controllers/Redux/bugReducer";
+import userReducer from "./Frontend/Controllers/Redux/userReducer";
 
 const reducer = combineReducers({
-    auth: authSlice,
-    bug: bugSlice,
-    user: userSlice
+    auth: authReducer,
+    bugs: bugReducer,
+    user: userReducer
 })
 
 const store = configureStore({
