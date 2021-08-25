@@ -5,6 +5,7 @@ import Login from "./Frontend/Views/Pages/Login/Login";
 import Sidebar from "./Frontend/Views/Sidebar/Sidebar";
 import ViewBugs from "./Frontend/Views/Pages/viewBugs";
 import BugForm from "./Frontend/Views/Components/BugCreateAndEdit/bugForm";
+import Dashboard from "./Frontend/Views/Pages/Dashboard/dashboard";
 
 function App() {
     const {auth} = useSelector(state => state)
@@ -15,6 +16,9 @@ function App() {
                     <>
                         <Sidebar />
                         <Switch>
+                            <Route exact path= "/">
+                                <Dashboard />
+                            </Route>
                             <Route path="/viewbugs">
                                 <ViewBugs/>
                             </Route>
